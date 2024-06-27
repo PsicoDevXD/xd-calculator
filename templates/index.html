@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>Solver de Equações Exponenciais</title>
+</head>
+<body>
+    <h1>Solver de Equações Exponenciais</h1>
+    <form method="post">
+        <label for="equation">Equação:</label>
+        <input type="text" id="equation" name="equation" placeholder="Ex: 2**x = 8">
+        <button type="submit">Resolver</button>
+    </form>
+    {% if solution %}
+    <h2>Solução:</h2>
+    <p>{{ solution }}</p>
+    {% endif %}
+</body>
+</html>
